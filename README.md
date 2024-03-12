@@ -2,6 +2,11 @@
 
 Fabric JS canvas reproduction for multiple testing
 
+[x] Custom controls 
+[x] Zoom on scroll
+[x] Import Image files
+[x] Import SVG files
+
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `yarn install`            | Installs dependencies                            |
