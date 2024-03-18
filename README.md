@@ -5,7 +5,8 @@ Fabric JS canvas reproduction for multiple testing
 - [x] Custom controls 
 - [x] Zoom on scroll
 - [x] Import Image files
-- [x] Import SVG files
+- [x] Import SVG file
+- [ ] Import PDF
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
