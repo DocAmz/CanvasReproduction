@@ -16,6 +16,7 @@ import {
 import ObjectBuilder from "@/modules/objects/objectBuilder";
 import { Button } from "../ui/button";
 import imageDisplay from "../image/image.display";
+import pdfDisplay from "../pdf/pdf.display";
 
 const HeadingEditor = () => {
 
@@ -25,7 +26,7 @@ const HeadingEditor = () => {
   }
 
   return (
-    <div className="flex">
+    <div className="flex h-12">
       <Menubar className="bg-background flex-1">
         <MenubarMenu>
           <MenubarTrigger>File</MenubarTrigger>
@@ -107,7 +108,11 @@ const HeadingEditor = () => {
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
-      <Button variant={'default'} onClick={() => imageDisplay.setDisplay(true)}>add image</Button>
+      <div className="flex gap-2 p-2">
+        <Button variant={'default'} onClick={() => imageDisplay.setDisplay(true)}>add image</Button>
+        <Button variant={'default'} onClick={() => pdfDisplay.setDisplay(true)}>add PDF</Button>
+      </div>
+
     </div>
   );
 };

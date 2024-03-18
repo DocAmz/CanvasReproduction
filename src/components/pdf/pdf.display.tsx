@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { makeAutoObservable } from "mobx"
 
-class ImageDisplay {
+class PdfDisplay {
   isDisplay: boolean = false
 
   constructor () {
@@ -14,4 +14,4 @@ class ImageDisplay {
 
 }
 
-export default new ImageDisplay()
+export default new PdfDisplay()

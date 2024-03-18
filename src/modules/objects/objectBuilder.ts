@@ -43,6 +43,19 @@ class ObjectBuilder {
     this.add(img);
   }
 
+  public createPdf = async (url: string) => {
+    const defaultOptions = {
+      ...this.DEFAULT_PROPS,
+      scaleX: 1,
+      scaleY: 1,
+      src: url,
+    };
+    //const img = await fabric.Pdf.fromURL(url, {});
+    //img.set({...defaultOptions})
+
+    //this.add(img);
+  }
+
   public createSvgElement = async (url: string) => {
     const canvas = this.canvas;
     fabric.loadSVGFromURL(url).then((res: any) => {
