@@ -21,10 +21,19 @@ const PdfModal = () => {
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    const type ='pdf'
     event.preventDefault();
     if (!file) return;
-    const pdfData = await uploadFile(file, 'pdf')
-    console.log(pdfData)
+    try {
+      const response = await uploadFile(file, type);
+      if (response.ok) {
+        console.log('File uploaded successfully');
+      } else {
+        console.error('Error uploading file');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
 };
 
 
